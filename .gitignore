@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Base de datos local
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+backend/app.db
+
+# Subidas y medios generados (se regeneran con `python -m app.cli seed`)
+backend/app/static/uploads/*
+backend/app/static/seed/*
+!backend/app/static/uploads/.gitkeep
+!backend/app/static/seed/.gitkeep
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+*.local
+
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Sistema / editores
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# OpenCode / herramientas
+.opencode/
