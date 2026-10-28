@@ -24,7 +24,10 @@ class BusinessSettings(Base, TimestampMixin):
     brand_name: Mapped[str] = mapped_column(
         String(120), nullable=False, default="ALMATE Propiedades"
     )
-    brand_descriptor: Mapped[str] = mapped_column(String(60), nullable=False, default="PROPIEDADES")
+    # Descriptor que acompaña a la marca en la cabecera del sitio público.
+    brand_descriptor: Mapped[str] = mapped_column(
+        String(60), nullable=False, default="ESTUDIO INMOBILIARIO"
+    )
     tagline: Mapped[str] = mapped_column(
         String(200), nullable=False, default="Propiedades seleccionadas en el sur del Gran Buenos Aires"
     )
